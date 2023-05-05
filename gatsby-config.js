@@ -9,9 +9,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Sonik`,
+    description: `Its awesome sonik`,
+    author: `@MaximVavilkin`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
@@ -39,5 +39,12 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `wu0fsniaxtvx`,
+        accessToken: `TiUs6nG0hPlLmQn64nRmDSG7MN4eSbB9b8paFA2w9y0`
+      }
+    }
   ],
 }
